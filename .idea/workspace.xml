@@ -16,9 +16,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -41,8 +42,9 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/com/dao" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/junit-jupiter-api-5.5.2.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib/fastjson-1.2.62.jar!/" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -69,27 +71,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WebSiteDaoTest.insert (1)">
+  <component name="RunManager" selected="Tomcat Server.myservlet">
     <configuration name="WebSiteDaoTest.insert (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myfirstservlet" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="WebSiteDaoTest" />
-      <option name="METHOD_NAME" value="insert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebSiteDaoTest.insert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myfirstservlet" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.tests.WebSiteDaoTest" />
       <option name="METHOD_NAME" value="insert" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -168,10 +154,13 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.WebSiteDaoTest.insert (1)" />
+      <item itemvalue="Tomcat Server.myservlet" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.WebSiteDaoTest.insert (1)" />
-        <item itemvalue="JUnit.WebSiteDaoTest.insert" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +176,7 @@
       <updated>1577089052659</updated>
       <workItem from="1577089056571" duration="34000" />
       <workItem from="1577089095958" duration="3029000" />
-      <workItem from="1577148689999" duration="18705000" />
+      <workItem from="1577148689999" duration="28620000" />
     </task>
     <servers />
   </component>

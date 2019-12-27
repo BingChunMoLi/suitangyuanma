@@ -1,5 +1,7 @@
 package com.controllers;
 
+import com.alibaba.fastjson.JSON;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,5 +35,6 @@ public class RefreshController extends HttpServlet {
                 "<body bgcolor=\"#f0f0f0\">\n" +
                 "<h1 align=\"center\">" + title + "</h1>\n" +
                 "<p>当前时间是：" + nowTime + "</p>\n");
+
     }
 }

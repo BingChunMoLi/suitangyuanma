@@ -5,9 +5,10 @@ import com.utils.DbUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class WebSiteDao implements IDao<Websites> {
+public class WebSiteDao implements IDao {
     @Override
     public void Insert(Websites g) {
         //获取连接
@@ -45,7 +46,27 @@ public class WebSiteDao implements IDao<Websites> {
     }
 
     @Override
-    public Websites getWebsitesByID(Integer id) {
-        return null;
+    public Websites getWebsitesByID(Integer id) throws SQLException {
+
+//获取连接
+        Connection conn = DbUtils.getConnection();
+//sql, 每行加空格
+        String sql = "SELECT * from websites where id=?";
+//预编译SQL，减少sql执行
+        PreparedStatement ptmt = conn.prepareStatement(sql);
+//传参
+        ptmt.setInt(1, id);
+//执行
+        ResultSet rs = ptmt.executeQuery();
+        Websites g = null;
+        while (rs.next()) {
+            g = new Websites();
+            g.setId(rs.getInt("id"));
+            g.setName(rs.getString("name"));
+            g.setUrl(rs.getString("url"));
+        }
+        return g;
+
+
     }
 }

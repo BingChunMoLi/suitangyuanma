@@ -2,12 +2,14 @@ package com.dao;
 
 import com.beans.Websites;
 
-public interface IDao<T> {
-    void Insert(T websites);
+import java.sql.SQLException;
 
-    void Delete(T id);
+public interface IDao {
+    void Insert(Websites websites);
 
-    void Update(T websites);
+    void Delete(Websites id);
 
-    T getWebsitesByID(Integer id);
+    void Update(Websites websites);
+
+    Websites getWebsitesByID(Integer id) throws SQLException;
 }

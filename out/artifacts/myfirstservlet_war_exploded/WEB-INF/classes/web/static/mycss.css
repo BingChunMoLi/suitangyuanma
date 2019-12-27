@@ -1,0 +1,32 @@
+html {
+    color: black;
+}
+
+h1 {
+
+}
+
+/*类选择器*/
+.test {
+    font-size: 100px;
+}
+
+/*id选择器*/
+#myspan {
+    color: red;
+}
+
+/*元素属性选择器*/
+p[testp] {
+    color: red;
+}
+
+/*后代元素选择器*/
+h1 em {
+    color: #311c1c;
+}
+
+/*选取直接子元素*/
+h1 > em {
+    color: red;
+}
